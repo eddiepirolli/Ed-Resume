@@ -1,0 +1,144 @@
+/* =============================== */
+/*            GENERAL              */
+/* =============================== */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f5f5f5; /* soft light gray */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+a {
+    color: #0073b1; /* LinkedIn blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =============================== */
+/*          PROFILE HEADER         */
+/* =============================== */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #eaeaea;
+    flex-wrap: wrap; /* allows photo and info to stack on smaller screens */
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    margin: 4px 0;
+    font-size: 2em; /* bigger name */
+    color: #333;
+    line-height: 1.4em;
+}
+
+.profile-info .contact p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 1em;
+}
+
+/* Divider under header */
+.divider {
+    border: none;
+    border-top: 1px solid #eaeaea; /* matches header */
+    height: 1px;
+    background-color: #eaeaea; /* ensures color displays */
+    margin: 0 20px 20px 20px;
+
+/* =============================== */
+/*          SECTION STYLING        */
+/* =============================== */
+.section {
+    max-width: 900px; 
+    margin: 30px auto; /* space between sections */
+    padding: 30px; /* internal padding */
+    background-color: #fff8f0; /* light warm background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    font-size: 1.5em; /* slighly bigger and professional */
+}
+
+/* =============================== */
+/*           JOB EXPERIENCE        */
+/* =============================== */
+.job {
+    margin-bottom: 20px;
+    width: 100%; /* ensures full width within section */
+    box-sizing: border-box; /* includes padding in width */
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.25em;
+    color: #222;
+}
+
+.job .company {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px; /* more space before bullets */
+}
+
+.job ul {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 30px;
+}
+
+/* =============================== */
+/*           SKILLS & LISTS        */
+/* =============================== */
+ul {
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 8px; /* more breathing room between bullets points */
+}
+
+/* =============================== */
+/*           RESPONSIVE            */
+/* =============================== */
+@media screen and (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-info h1 {
+        font-size: 1.5em;
+    }
+
+    .profile-info .contact p {
+        font-size: 0.95em;
+    }
+
+    .divider {
+        margin: 10px 0 20px 0;
+    }
+}
