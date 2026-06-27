@@ -62,13 +62,18 @@
   }
 
   .photo {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center 15%;
     border: 3px solid #b0966e;
     box-shadow: 0 2px 8px rgba(0,0,0,0.18);
     flex-shrink: 0;
+    image-rendering: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
   }
 
   .header-text { flex: 1; }
