@@ -31,11 +31,7 @@
       repeating-linear-gradient(90deg, rgba(180,160,130,0.12) 0px, rgba(180,160,130,0.12) 1px, transparent 1px, transparent 4px),
       repeating-linear-gradient(135deg, rgba(200,185,160,0.07) 0px, rgba(200,185,160,0.07) 1px, transparent 1px, transparent 6px),
       linear-gradient(160deg, #faf6ee 0%, #f2ece0 40%, #f5f0e6 70%, #ede7d8 100%);
-    box-shadow:
-      0 1px 1px rgba(0,0,0,0.08),
-      0 4px 8px rgba(0,0,0,0.12),
-      0 16px 40px rgba(0,0,0,0.18),
-      inset 0 0 60px rgba(200,185,160,0.08);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.12), 0 16px 40px rgba(0,0,0,0.18), inset 0 0 60px rgba(200,185,160,0.08);
     border: 1px solid rgba(180,160,130,0.3);
     padding: 56px 64px;
     position: relative;
@@ -51,81 +47,22 @@
     pointer-events: none;
   }
 
-  .header {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    border-bottom: 2px solid #7a6a52;
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-  }
+  .header { display: flex; align-items: center; gap: 28px; border-bottom: 2px solid #7a6a52; padding-bottom: 24px; margin-bottom: 24px; }
 
-  .photo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center 15%;
-    border: 3px solid #b0966e;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-    flex-shrink: 0;
-    image-rendering: auto;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-  }
+  .photo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; object-position: center 15%; border: 3px solid #b0966e; box-shadow: 0 2px 8px rgba(0,0,0,0.18); flex-shrink: 0; image-rendering: auto; -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: translateZ(0); }
 
   .header-text { flex: 1; }
 
-  .name {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-    font-weight: 700;
-    color: #2c2416;
-    letter-spacing: 0.5px;
-    line-height: 1.1;
-  }
+  .name { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 700; color: #2c2416; letter-spacing: 0.5px; line-height: 1.1; }
 
-  .title-line {
-    font-size: 12px;
-    font-weight: 600;
-    color: #7a6a52;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-top: 5px;
-  }
+  .title-line { font-size: 12px; font-weight: 600; color: #7a6a52; letter-spacing: 2px; text-transform: uppercase; margin-top: 5px; }
 
-  .contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px 18px;
-    margin-top: 10px;
-    font-size: 12px;
-    color: #5a4e3a;
-  }
+  .contact { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 10px; font-size: 12px; color: #5a4e3a; }
   .contact a { color: #5a4e3a; text-decoration: none; border-bottom: 1px dotted #9a8a72; }
 
-  .summary {
-    font-size: 13.5px;
-    line-height: 1.75;
-    color: #3a3020;
-    margin-bottom: 24px;
-    font-style: italic;
-    border-left: 3px solid #b0966e;
-    padding-left: 16px;
-  }
+  .summary { font-size: 13.5px; line-height: 1.75; color: #3a3020; margin-bottom: 24px; font-style: italic; border-left: 3px solid #b0966e; padding-left: 16px; }
 
-  h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 12px;
-    font-weight: 600;
-    color: #7a6a52;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #c8b898;
-  }
+  h2 { font-family: 'Playfair Display', serif; font-size: 12px; font-weight: 600; color: #7a6a52; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 12px; padding-bottom: 4px; border-bottom: 1px solid #c8b898; }
 
   .section { margin-bottom: 24px; }
   .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; }
@@ -147,6 +84,26 @@
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   hr.divider { border: none; border-top: 1px solid #d4c4a8; margin: 4px 0 20px; }
 
+  .connect-section { text-align: center; padding: 24px 0 8px; }
+  .connect-label { font-family: 'Playfair Display', serif; font-size: 12px; color: #7a6a52; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 14px; }
+  .connect-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #7a6a52;
+    color: #faf6ee;
+    text-decoration: none;
+    padding: 11px 26px;
+    border-radius: 4px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: background 0.2s;
+  }
+  .connect-btn:hover { background: #5a4a32; }
+
   @media (max-width: 620px) {
     .paper { padding: 32px 20px; }
     .skills-grid, .two-col { grid-template-columns: 1fr; }
@@ -157,187 +114,12 @@
   @media print {
     body { background: none; padding: 0; }
     .paper { box-shadow: none; border: none; max-width: 100%; padding: 20mm; }
-    #chat-overlay, #chat-bubble { display: none; }
   }
-
-  /* ── Chat Overlay ── */
-  #chat-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(44, 36, 22, 0.55);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    pointer-events: none;
-  }
-  #chat-overlay.visible {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  #chat-box {
-    width: 100%;
-    max-width: 360px;
-    background-color: #faf6ee;
-    background-image:
-      repeating-linear-gradient(0deg, rgba(255,255,255,0.18) 0px, rgba(255,255,255,0.18) 1px, transparent 1px, transparent 4px),
-      repeating-linear-gradient(90deg, rgba(180,160,130,0.12) 0px, rgba(180,160,130,0.12) 1px, transparent 1px, transparent 4px),
-      linear-gradient(160deg, #faf6ee 0%, #f2ece0 100%);
-    border: 1px solid rgba(180,160,130,0.4);
-    border-radius: 4px;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.25);
-    display: flex;
-    flex-direction: column;
-    max-height: 60vh;
-    margin: 16px;
-    overflow: hidden;
-    transform: translateY(20px);
-    transition: transform 0.4s ease;
-  }
-  #chat-overlay.visible #chat-box { transform: translateY(0); }
-
-  #chat-header {
-    background: #7a6a52;
-    padding: 10px 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-  }
-  #chat-header-left { display: flex; align-items: center; gap: 8px; }
-  #chat-avatar {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center 15%;
-    border: 2px solid #d4b896;
-  }
-  #chat-header h3 { font-family: 'Playfair Display', serif; color: #faf6ee; font-size: 13px; font-weight: 600; }
-  #chat-header p { color: #d4c4a8; font-size: 10px; margin-top: 1px; }
-  #chat-close {
-    background: none; border: none; color: #d4c4a8; font-size: 18px;
-    cursor: pointer; line-height: 1; padding: 0 4px;
-  }
-  #chat-close:hover { color: #faf6ee; }
-
-  #chat-messages {
-    flex: 1;
-    overflow-y: auto;
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .msg {
-    max-width: 85%;
-    padding: 8px 11px;
-    border-radius: 4px;
-    font-size: 12.5px;
-    line-height: 1.55;
-  }
-  .msg.bot {
-    background: #ede7d8;
-    border: 1px solid #d4c4a8;
-    color: #3a3020;
-    align-self: flex-start;
-    border-radius: 4px 14px 14px 14px;
-  }
-  .msg.user {
-    background: #7a6a52;
-    color: #faf6ee;
-    align-self: flex-end;
-    border-radius: 14px 4px 14px 14px;
-  }
-  .msg.typing { font-style: italic; color: #9a8a72; }
-
-  #chat-suggestions {
-    padding: 0 12px 8px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  .suggestion {
-    background: transparent;
-    border: 1px solid #b0966e;
-    color: #7a6a52;
-    font-size: 11px;
-    padding: 4px 9px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: 'Source Sans 3', sans-serif;
-    transition: all 0.2s;
-  }
-  .suggestion:hover { background: #b0966e; color: #faf6ee; }
-
-  #chat-input-area {
-    display: flex;
-    gap: 6px;
-    padding: 8px 12px;
-    border-top: 1px solid #d4c4a8;
-    background: rgba(255,255,255,0.3);
-  }
-  #chat-input {
-    flex: 1;
-    border: 1px solid #c8b898;
-    border-radius: 20px;
-    padding: 6px 12px;
-    font-size: 12px;
-    font-family: 'Source Sans 3', sans-serif;
-    background: #faf6ee;
-    color: #3a3020;
-    outline: none;
-  }
-  #chat-input:focus { border-color: #b0966e; }
-  #chat-send {
-    background: #7a6a52;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    color: #faf6ee;
-    font-size: 13px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.2s;
-    flex-shrink: 0;
-  }
-  #chat-send:hover { background: #5a4a32; }
-
-  /* Reopen bubble */
-  #chat-bubble {
-    position: fixed;
-    bottom: 28px;
-    right: 28px;
-    background: #7a6a52;
-    color: #faf6ee;
-    border: none;
-    border-radius: 50px;
-    padding: 12px 20px;
-    font-size: 13px;
-    font-family: 'Source Sans 3', sans-serif;
-    cursor: pointer;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-    display: none;
-    align-items: center;
-    gap: 8px;
-    z-index: 999;
-    transition: background 0.2s;
-  }
-  #chat-bubble:hover { background: #5a4a32; }
-  #chat-bubble.show { display: flex; }
 </style>
 </head>
 <body>
-
-<!-- ── Resume Paper ── -->
 <div class="paper">
+
   <div class="header">
     <img src="Images/LinkedIn-Profile.png" alt="Eduardo Pirolli" class="photo" onerror="this.style.display='none'">
     <div class="header-text">
@@ -457,162 +239,17 @@
       <div class="edu-item">English (Native) · Portuguese (Fluent)<br>Spanish (Professional) · Italian (A2, Active)</div>
     </div>
   </div>
-</div>
 
-<!-- ── Chat Overlay ── -->
-<div id="chat-overlay">
-  <div id="chat-box">
-    <div id="chat-header">
-      <div id="chat-header-left">
-        <img src="Images/LinkedIn-Profile.png" alt="Eduardo" id="chat-avatar" onerror="this.style.display='none'">
-        <div>
-          <h3>Ask Eduardo</h3>
-          <p>AI assistant · Experience & Skills</p>
-        </div>
-      </div>
-      <button id="chat-close" onclick="closeChat()">×</button>
-    </div>
+  <hr class="divider">
 
-    <div id="chat-messages">
-      <div class="msg bot">Hi! I'm Eduardo's AI assistant. Ask me anything about his experience, skills, or background. 👋</div>
-    </div>
-
-    <div id="chat-suggestions">
-      <button class="suggestion" onclick="askSuggestion(this)">What are Eduardo's top skills?</button>
-      <button class="suggestion" onclick="askSuggestion(this)">Tell me about his sales experience</button>
-      <button class="suggestion" onclick="askSuggestion(this)">Has he worked internationally?</button>
-      <button class="suggestion" onclick="askSuggestion(this)">What tools does he use?</button>
-    </div>
-
-    <div id="chat-input-area">
-      <input id="chat-input" type="text" placeholder="Ask a question..." onkeydown="if(event.key==='Enter') sendMessage()">
-      <button id="chat-send" onclick="sendMessage()">➤</button>
-    </div>
+  <div class="connect-section">
+    <div class="connect-label">Let's Connect</div>
+    <a href="https://www.linkedin.com/in/eduardo-pirolli-49a043208/" target="_blank" class="connect-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#faf6ee"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      Let's Connect on LinkedIn
+    </a>
   </div>
+
 </div>
-
-<!-- Reopen bubble -->
-<button id="chat-bubble" onclick="openChat()">💬 Ask Eduardo</button>
-
-<script>
-  const SYSTEM_PROMPT = `You are an AI assistant representing Eduardo Cunha Pirolli, a Sales & Business Development professional. Answer questions about his experience, skills, and background in a professional, concise, and friendly tone — as if you are speaking on his behalf.
-
-Here is Eduardo's full professional profile:
-
-SUMMARY:
-Results-driven Sales & Business Development professional with 15+ years of experience driving revenue growth, leading cross-functional teams, and delivering exceptional client experiences across Europe and North America. Generated €16K in new sales within a single week at Teltonika Networks. Multilingual: English (native), Portuguese (fluent), Spanish (professional), Italian (A2, active study).
-
-EXPERIENCE:
-1. Sales Manager – Teltonika Networks, Vilnius, Lithuania (Nov 2024 – Apr 2025)
-- Accelerated monthly revenue by €16K in a single week through targeted consultative sales
-- Expanded qualified pipeline via Sales Navigator, ZoomInfo, Apollo, Lusha
-- Increased brand visibility at international industry events
-- Strengthened client retention by aligning solutions with client needs
-
-2. Senior Client Service Analyst – Nasdaq, Vilnius, Lithuania (May 2022 – Dec 2023)
-- Led full-cycle recruitment using behavioral interview frameworks and ATS platforms
-- Coordinated cross-timezone release schedules as Scrum Master
-- Designed technical onboarding programs improving retention and satisfaction
-- Used Datadog and Splunk for performance gap analysis for US, UK, Germany clients
-
-3. Customer Experience & Talent Manager – Yard Venture UAB, Vilnius (Aug 2021 – May 2022)
-- Overhauled training strategies and performance coaching for support staff
-- Proposed and got approved a live hotel/airfare price-sync dashboard feature
-- Managed company social media strategy
-
-4. Front Office Supervisor / Elite Desk Lead – New York Marriott Marquis, NYC (Sep 2005 – Mar 2019)
-- Managed front-office operations for a 1,966-room flagship NYC property for 14 years
-- Trained and onboarded 20+ staff; earned Marriott Supervisor Program recognition
-- Delivered VIP and Elite guest services for high-profile clientele
-
-5. Event Planning & Client Experience Manager – Skytop Strategies, NYC (Jul 2020 – Mar 2021)
-- Executed end-to-end corporate event planning including vendor negotiations and PR coordination
-
-SKILLS:
-- Sales & BD: B2B Sales, Consultative Selling, Pipeline Development, CRM (HubSpot, Salesforce, Apollo), Sales Navigator, Territory Management
-- Leadership: Cross-functional Team Leadership, Scrum/Agile, Jira, Stakeholder Management, Training & Onboarding, KPI Tracking
-- Data & Analytics: Datadog, Splunk, Market Research, Performance Reporting, Risk Mitigation, Forecasting
-- Client Experience: VIP Client Relations, CRM Management, Proposal Development, Event Planning, Social Media Strategy
-
-CERTIFICATIONS:
-- HubSpot Sales Software Certification
-- LinkedIn Sales Navigator Certification
-- Marriott Spirit to Serve Customer Success
-
-EDUCATION:
-- Associate Degree, Business Management – Institute of Culinary Education, NY
-- Associate Degree, Culinary Arts – Institute of Culinary Education, NY
-- Italian Language Studies (Ongoing) – IPSIA CPIA, Terni, Umbria
-
-Only answer questions related to Eduardo's professional experience, skills, background, and qualifications. If asked about anything unrelated, politely redirect the conversation back to his professional profile. Keep answers concise — 2 to 4 sentences max unless more detail is clearly needed.`;
-
-  // Auto-open after 2.5 seconds
-  setTimeout(() => {
-    document.getElementById('chat-overlay').classList.add('visible');
-  }, 2500);
-
-  function closeChat() {
-    document.getElementById('chat-overlay').classList.remove('visible');
-    document.getElementById('chat-bubble').classList.add('show');
-  }
-
-  function openChat() {
-    document.getElementById('chat-overlay').classList.add('visible');
-    document.getElementById('chat-bubble').classList.remove('show');
-  }
-
-  function askSuggestion(btn) {
-    document.getElementById('chat-input').value = btn.textContent;
-    document.getElementById('chat-suggestions').style.display = 'none';
-    sendMessage();
-  }
-
-  function addMessage(text, role) {
-    const msgs = document.getElementById('chat-messages');
-    const div = document.createElement('div');
-    div.className = 'msg ' + role;
-    div.textContent = text;
-    msgs.appendChild(div);
-    msgs.scrollTop = msgs.scrollHeight;
-    return div;
-  }
-
-  const history = [];
-
-  async function sendMessage() {
-    const input = document.getElementById('chat-input');
-    const text = input.value.trim();
-    if (!text) return;
-
-    input.value = '';
-    addMessage(text, 'user');
-    history.push({ role: 'user', content: text });
-
-    const typing = addMessage('Typing...', 'bot typing');
-
-    try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-6',
-          max_tokens: 1000,
-          system: SYSTEM_PROMPT,
-          messages: history
-        })
-      });
-
-      const data = await res.json();
-      const reply = data.content?.[0]?.text || "Sorry, I couldn't get a response. Please try again.";
-      typing.remove();
-      addMessage(reply, 'bot');
-      history.push({ role: 'assistant', content: reply });
-
-    } catch (e) {
-      typing.remove();
-      addMessage("Sorry, something went wrong. Please try again.", 'bot');
-    }
-  }
-</script>
 </body>
 </html>
